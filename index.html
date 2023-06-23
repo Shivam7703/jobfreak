@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job freak</title>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="menu-list h5t" onclick="home()" style="border-radius: 70px 0px 0px;"><i class="fa-solid fa-house-chimney"></i> HOME</div>
+        <div class="menu-list h5t" onclick="contact()"> <i class="fa-solid fa-phone"></i> CONTACT US</div>
+        <div class="menu-list h5t" onclick="infor()"> <i class="fa-solid fa-circle-info"></i> INFORMATION</div>
+        <div class="menu-list h5t" style="border-radius: 0px 0px 70px;" onclick="guide()"> <i class="fa-solid fa-microphone"></i> GUIDE</div>
+    </div>
+
+    <div class="info">
+        <h1> Hello! <br> Welcome to <span>job freak.</span> <br> Please select an option.</h1>
+    </div>
+
+    <script>
+        var x =  document.querySelector(".info");
+        function home() {
+
+            x.innerHTML ="" + "<h1>Welcome to our <span>Home page</span></h1>";
+        }
+
+        function contact() {
+            x.innerHTML = "" + "<h3> OUR CONTACT DETAILS</h3><br><br><h2>our website</h2><h4>www.ourwebsite.com</h4><hr><h2>our Contact No.</h2><h4>900030001</h4>";
+            // Add functionality for the "CONTACT US" menu option
+        }
+
+        function infor() {
+            x.innerHTML="" +" <h1>This is our details</h1>";
+            // Add functionality for the "INFORMATION" menu option
+        }
+
+        function guide() {
+            x.innerHTML="" +" <h1>How may I help you</h1>";
+            // Add functionality for the "GUIDE" menu option
+        }
+    </script>
+</body>
+</html>
